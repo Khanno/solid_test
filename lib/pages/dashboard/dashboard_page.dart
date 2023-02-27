@@ -2,7 +2,7 @@
 
 import "package:flutter/material.dart";
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:solid_test/dashboard/bloc/dashboard_bloc.dart';
+import 'package:solid_test/pages/dashboard/bloc/dashboard_bloc.dart';
 import 'package:solid_test/styles/styles_barrel_file.dart';
 
 class DashboardPage extends StatelessWidget {

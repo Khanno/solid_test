@@ -1,1 +1,1 @@
-export "./dashboard/dashboard_page.dart";
+export "pages/dashboard/dashboard_page.dart";
