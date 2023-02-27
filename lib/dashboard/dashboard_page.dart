@@ -3,6 +3,7 @@
 import "package:flutter/material.dart";
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:solid_test/dashboard/bloc/dashboard_bloc.dart';
+import 'package:solid_test/styles/styles_barrel_file.dart';
 
 class DashboardPage extends StatelessWidget {
   const DashboardPage({super.key});
@@ -15,8 +16,11 @@ class DashboardPage extends StatelessWidget {
             onTap: () => context.read<DashboardBloc>().add(ChangeColorEvent()),
             child: Scaffold(
               backgroundColor: state.color,
-              body: const Center(
-                child: Text("Hey there"),
+              body: Center(
+                child: Text(
+                  "Hey there",
+                  style: dashboardTextStyle(),
+                ),
               ),
             ),
           ),
